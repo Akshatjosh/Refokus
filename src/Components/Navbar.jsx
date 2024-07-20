@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 
 function Navbar() {
+  const btnText = "Get Started";
   return (
     <div className="mx-auto max-w-screen-xl flex gap-12 justify-between items-center ml-36 p-3  border border-b-[1px] border-zinc-100">
       <div className="flex items-center">
@@ -27,7 +28,7 @@ function Navbar() {
           ))}
         </div>
       </div>
-      <Button />
+      <Button btnText={btnText} />
     </div>
   );
 }
